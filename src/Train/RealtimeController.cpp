@@ -584,6 +584,13 @@ RealtimeController::processRealtimeData(RealtimeData &rtData)
         }
         break;
 
+    case 66: // GRABER MAG LEVEL 5
+        {
+        double v = rtData.getSpeed();
+        rtData.setWatts((0.0568182f * pow(v, 2)) + (3.2197f * v) + 0.378788);
+        }
+        break;
+
     default : // unknown - do nothing
         break;
     }

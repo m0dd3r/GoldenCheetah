@@ -1166,6 +1166,7 @@ AddFinal::AddFinal(AddDeviceWizard *parent) : QWizardPage(parent), wizard(parent
     virtualPower->addItem(tr("Power - Tacx Sirius (8)"));                                   // 63
     virtualPower->addItem(tr("Power - Tacx Sirius (9)"));                                   // 64
     virtualPower->addItem(tr("Power - Tacx Sirius (10)"));                                  // 65
+    virtualPower->addItem(tr("Power - Graber Mag (5)"));                                    // 66
 
     //
     // Wheel size
